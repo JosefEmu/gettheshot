@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <link rel="icon" type="image/png" href="vaccine.png">
 
 	<style type="text/css">
@@ -25,27 +28,138 @@
 
 	</style>
 </head>
-<body class="p-3 mb-2 bg-dark text-white">
+<body class="p-3 mb-2 bg-light text-dark">
 
 	<header>
 		<h1 class="display-4">Wear a Mask, Stay Safe!</h1>
 		<p class="lead">Here's where to get your COVID Vaccine shot:</p>
-	</header>		
-		<section>
-			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eBGvL8vpdZ8D0uUBqWlRqohiLndqEb4R" width="800" height="600"></iframe>
-		</section>
+	</header>
+	<section>
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="all-locations-tab" data-bs-toggle="tab" data-bs-target="#all-locations" type="button" role="tab" aria-controls="all-locations" aria-selected="true">All locations</button>
+			</li>
+			<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="central-tab" data-bs-toggle="tab" data-bs-target="#central" type="button" role="tab" aria-controls="central" aria-selected="false">Central</button>
+		  	</li>  
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="coast-tab" data-bs-toggle="tab" data-bs-target="#coast" type="button" role="tab" aria-controls="coast" aria-selected="false">Coast</button>
+		 	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="eastern-tab" data-bs-toggle="tab" data-bs-target="#eastern" type="button" role="tab" aria-controls="eastern" aria-selected="false">Eastern</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="nairobi-tab" data-bs-toggle="tab" data-bs-target="#nairobi" type="button" role="tab" aria-controls="nairobi" aria-selected="false">Nairobi</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="north-eastern-tab" data-bs-toggle="tab" data-bs-target="#north-eastern" type="button" role="tab" aria-controls="north-eastern" aria-selected="false">North Eastern</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="nyanza-tab" data-bs-toggle="tab" data-bs-target="#nyanza" type="button" role="tab" aria-controls="nyanza" aria-selected="false">Nyanza</button>
+		  	</li>
+		   	<li class="nav-item" role="presentation">
+		   		<button class="nav-link" id="rift-valley-tab" data-bs-toggle="tab" data-bs-target="#rift-valley" type="button" role="tab" aria-controls="rift-valley" aria-selected="false">Rift Valley</button>
+		  	</li>
+		  	<li class="nav-item" role="presentation">
+		    	<button class="nav-link" id="western-tab" data-bs-toggle="tab" data-bs-target="#western" type="button" role="tab" aria-controls="western" aria-selected="false">Western</button>
+		  	</li> 
+		</ul>
 
-		<section>
-			<button type="button" class="btn btn-light btn-lg">Confused?</button>
-			<!-- Add js function to show demo gif or images slideshow -->
-		</section>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="all-locations" role="tabpanel" aria-labelledby="all-locations-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eBGvL8vpdZ8D0uUBqWlRqohiLndqEb4R" width="800" height="600"></iframe>
+		  	</div>
+		  	<div class="tab-pane fade" id="central" role="tabpanel" aria-labelledby="central-tab">
+		 		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11xyEXI5B03P0--57IHtjkLnqp7CCDnus" width="800" height="600"></iframe> 	
+			</div>
+			<div class="tab-pane fade " id="coast" role="tabpanel" aria-labelledby="coast-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1h_KTv1BYhV3aAFK9ZcO-xirW-8g64bs-" width="800" height="600"></iframe>
+			</div>
+		  	<div class="tab-pane fade" id="eastern" role="tabpanel" aria-labelledby="eastern-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FRo0vFMBrSlV7M80ew7griaMsiKOVhB4" width="800" height="600"></iframe>
+			</div>
+		  	<div class="tab-pane fade" id="nairobi" role="tabpanel" aria-labelledby="nairobi-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=13dGuzpk5wh5nBObFd-ZdJSZu3VWmPKig" width="800" height="600"></iframe>
+			</div>
+		  	<div class="tab-pane fade" id="north-eastern" role="tabpanel" aria-labelledby="north-eastern-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=19-Yag2p1YvU6fWGyhR1q8ofkSFowF3ta" width="800" height="600"></iframe>
+			</div>
+		  	<div class="tab-pane fade" id="nyanza" role="tabpanel" aria-labelledby="nyanza-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YkEWhN1WpO4_hhdeLlg8NXWF9eoVEP8r" width="800" height="600"></iframe>
+			</div>
+			<div class="tab-pane fade" id="rift-valley" role="tabpanel" aria-labelledby="rift-valley-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vgVQw6vwtfnFYwxZhP4_QslZbnppgpLr" width="800" height="600"></iframe>
+			</div>
+		  	<div class="tab-pane fade" id="western" role="tabpanel" aria-labelledby="western-tab">
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Vv7W3P_iE0Vp06NrDH4VPsyjgCgyD2uY" width="800" height="600"></iframe>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="confused-helpful" style="display:none;">
+			<hr>
+			<div class="helpful-demo">
+			<h2>Helpful Tips</h2>
+			<p>Video/Gif Coming soon</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+
+			<p class="text-muted"><strong>Important disclaimer: </strong> </p>
+			</div>
+			
+			<div class="ref-sites">
+			<h6>Source of Data</h6>
+			<ul>
+				<li><a href="https://www.health.go.ke/">Ministry of Health, Kenya</a></li>
+				<li><a href="http://medical.unon.org/sites/default/files/2021-03/MOH%20APPROVED%20COVID%2019%20VACCINATION%20POSTS%20MARCH%20TO%20JUNE_FINAL.pdf"> UNON Joint Medical Services</a></li>
+			</ul>
+	
+			</div>
+			
+		</div>
+
+		<button type="button" class="btn btn-outline-dark" id="confused-open" onclick="showDiv()">Confused?</button>
+<!-- 
+TO-DO
+- demo gif or images slideshow
+- disclaimer on usage of info
+
+
+Done
+- Add js function to show:
+- source of information 
+-->
+
+		
+	</section>
+	
 	<footer>
 		<div class="socials">
 			<a href="https://twitter.com/JosefEmu" target="_blank"><img alt="white twitter logo" src="twitter.png" width="32px"></a>
 			<a href="https://github.com/JosefEmu" target="_blank"><img alt="white github logo" src="github.png" width="32px"></a>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		function showDiv() {
+			document.getElementById('confused-helpful').style.display = "block";
+	  		document.getElementById('confused-open').style.display = "block";
+	  	}
+	 //  	var button = document.getElementById('confused-close');
 
+		// button.onclick = function() {
+		//     var div = document.getElementById('confused-helpful');
+		//     if (div.style.display !== 'none') {
+		//         div.style.display = 'none';
+		//     }
+		//     else {
+		//         div.style.display = 'block';
+		//     }
+		// };
 
+	</script>
 </body>
 </html>
